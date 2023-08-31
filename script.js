@@ -10,7 +10,6 @@
 function getComputerChoice(){
     const choice = ["ROCK", "PAPER", "SCISSORS"];
     let number = Math.floor(Math.random() * 3);
-    console.log(number)
     return choice[number];
 }
 function getPlayerChoice(){
