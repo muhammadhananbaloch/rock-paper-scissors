@@ -13,10 +13,23 @@ function getComputerChoice(){
     return choice[number];
 }
 function getPlayerChoice(){
-    return playerChoice = prompt("Choose your move!\n(rock, paper, scissors).").toUpperCase()
+    let playerChoices = prompt("Choose your move!\n(rock, paper, scissors).");
+    let playerChoice = playerChoices;
+    if (playerChoices === null){
+        return playerChoices;
+    }
+    else{
+        return playerChoice.toUpperCase();
+    }
+    
 }
 function playGame(computerChoice, playerChoice){
-    if (computerChoice === 'ROCK' && playerChoice === 'ROCK'){
+    if (playerChoice === null){
+        alert("Thanks for playing!");
+        console.log("Game Over!");
+    }
+
+    else if (computerChoice === 'ROCK' && playerChoice === 'ROCK'){
         alert("It's a tie!");
         console.log("You both chose rock. It's a tie!")
     }
@@ -65,6 +78,8 @@ function playGame(computerChoice, playerChoice){
         alert("Invalid Choice, play again!")
         playGame(getComputerChoice(), getPlayerChoice());
     }
+
+    
 }
 
 function game(){
