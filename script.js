@@ -34,6 +34,7 @@ function playGame(computerChoice, playerChoice){
 
     else if (computerChoice === 'PAPER' && playerChoice === 'SCISSORS'){
         alert("You Win!");
+        console.log("Computer chose paper. You win!")
     }
 
     else if (computerChoice === 'PAPER' && playerChoice === 'ROCK'){
@@ -46,6 +47,7 @@ function playGame(computerChoice, playerChoice){
 
     else if (computerChoice === 'SCISSORS' && playerChoice === 'ROCK'){
         alert("You Win!");
+        console.log("Computer chose scissors. You win!")
     }
 
     else if (computerChoice === 'ROCK' && playerChoice === 'SCISSORS'){
@@ -54,6 +56,7 @@ function playGame(computerChoice, playerChoice){
 
     else if (computerChoice === 'ROCK' && playerChoice === 'PAPER'){
         alert("You Win!");
+        console.log("Computer chose rock. You win!")
     }
 
     else{
