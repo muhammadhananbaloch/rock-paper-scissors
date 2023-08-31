@@ -39,10 +39,12 @@ function playGame(computerChoice, playerChoice){
 
     else if (computerChoice === 'PAPER' && playerChoice === 'ROCK'){
         alert("You lost to a machine. Be ashamed!");
+        console.log("Computer chose paper. You lose!")
     }
 
     else if (computerChoice === 'SCISSORS' && playerChoice === 'PAPER'){
         alert("You lost to a machine. Be ashamed!");
+        console.log("Computer chose scissors. You lose!")
     }
 
     else if (computerChoice === 'SCISSORS' && playerChoice === 'ROCK'){
@@ -52,6 +54,7 @@ function playGame(computerChoice, playerChoice){
 
     else if (computerChoice === 'ROCK' && playerChoice === 'SCISSORS'){
         alert("You lost to a machine. Be ashamed!");
+        console.log("Computer chose rock. You lose!")
     }
 
     else if (computerChoice === 'ROCK' && playerChoice === 'PAPER'){
