@@ -67,4 +67,21 @@ function playGame(computerChoice, playerChoice){
         playGame(getComputerChoice(), getPlayerChoice());
     }
 }
-playGame(getComputerChoice(), getPlayerChoice());
+
+function game(){
+    console.log("ROUND ONE")
+    playGame(getComputerChoice(), getPlayerChoice());    
+
+    console.log("ROUND TWO")
+    playGame(getComputerChoice(), getPlayerChoice());
+
+    console.log("ROUND THREE")
+    playGame(getComputerChoice(), getPlayerChoice());
+
+    console.log("ROUND FOUR")
+    playGame(getComputerChoice(), getPlayerChoice());
+
+    console.log("ROUND FIVE")
+    playGame(getComputerChoice(), getPlayerChoice());
+}
+game();
