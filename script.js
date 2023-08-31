@@ -19,14 +19,17 @@ function getPlayerChoice(){
 function playGame(computerChoice, playerChoice){
     if (computerChoice === 'ROCK' && playerChoice === 'ROCK'){
         alert("It's a tie!");
+        console.log("You both chose rock. It's a tie!")
     }
     
     else if (computerChoice === 'PAPER' && playerChoice === 'PAPER'){
         alert("It's a tie!");
+        console.log("You both chose paper. It's a tie!")
     }
 
     else if (computerChoice === 'SCISSORS' && playerChoice === 'SCISSORS'){
         alert("It's a tie!");
+        console.log("You both chose scissors. It's a tie!")
     }
 
     else if (computerChoice === 'PAPER' && playerChoice === 'SCISSORS'){
